@@ -1,0 +1,23 @@
+{
+  "name": "digital-cv",
+  "version": "1.0.0",
+  "description": "Digital CV to send all employers",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnuhell/digital-cv.git"
+  },
+  "keywords": [
+    "Digital-CV",
+    "CV"
+  ],
+  "author": "Manuel Villagordo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mnuhell/digital-cv/issues"
+  },
+  "homepage": "https://github.com/mnuhell/digital-cv#readme"
+}
