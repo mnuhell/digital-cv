@@ -2,7 +2,7 @@
   "name": "digital-cv",
   "version": "1.0.0",
   "description": "Digital CV to send all employers",
-  "main": "src/index.html",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
