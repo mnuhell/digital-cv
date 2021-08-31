@@ -1,6 +1,50 @@
+* {
+    transition: all ease-in-out 1s;
+}
+
+:root{
+    --secondary-color: #F9C846;
+    --borders: #545863;
+    --text: #545863;
+}
+
 html{
     font-size: 62.5%;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    border-top: 10px solid var(--borders);
+    color: var(--text);
 }
+
+@keyframes arrow {
+    0% {
+        transform: translate(0px, 0px);
+        animation-timing-function:ease-in-out
+    }
+
+    50% {
+        transform: translate(0px, -20px );
+        animation-timing-function:ease-in-out
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        animation-timing-function:ease-in-out
+    }
+}
+
+.separator{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px ;
+    animation-name: arrow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
 .wrapper{
     width: 100%;
     aspect-ratio: 100 / 29
@@ -22,14 +66,48 @@ html{
 }
 
 .header-right{
-    border: 1px solid #ccc;
-    width: 100%;
+
+    background-color: var(--secondary-color);
+    margin-bottom: 1em;
+    padding: 5px 5px;
+    width: auto;
+    color: var(--borders)
+}
+
+.header-right-title{
+    font-size: 1.6em;
 }
 
 header{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 2em;
+}
+.basic-information{
+    margin-bottom: 30px;
+}
+.content-label{
+    font-size: 1.7em;
+    display: block;
+    margin-bottom: 5px;
+}
+.form-info-info{
+    font-size: 1.2em;
+}
+.form-info{
+    padding: 5px 0 5px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    align-items: flex-end;
+    grid-gap: 10px;
+    grid-auto-rows: auto;
+    border-bottom: 1px solid var(--secondary-color)
+}
+
+.form-info:last-child{
+    border: none;
 }
 
 @media screen and (min-width: 320px){
@@ -40,13 +118,15 @@ header{
         justify-content: center;
         align-content: center;
         align-items: center;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         text-align: center;
+        margin-bottom: 30px;
     }
 
     .header-title{
-        font-size: 4em;
+        font-size: 3.5em;
         text-align: left;
+        font-weight: 400;
+        text-transform: uppercase;
     }
     .header-subtitle{
         font-size: 1em;
