@@ -32,8 +32,19 @@ html{
     }
 }
 
+.link{
+
+    color: var(--text);
+}
+
+.container-skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+}
+
 .separator{
-    display: flex;
+    display: inline-block;
     align-content: center;
     align-items: center;
     width: 100%;
@@ -50,12 +61,13 @@ html{
     aspect-ratio: 100 / 29
 }
 
-.about-me, .basic-information{
+.about-me, .basic-information, .skills, .books{
     border: 1px dotted var(--borders);
     padding: 10px;
     border-radius: 5px;
+    margin-bottom: 40px;
 }
-.about-me-text{
+.about-me-text, .container-skills, .books{
     font-size: 1.3em;
     line-height: 1.7em;
     color: var(--text);
@@ -77,6 +89,12 @@ html{
     margin-bottom: .5em;
 }
 
+.subtitle{
+    font-size: 1.5em;
+    margin: 10px 0 0 0;
+    text-decoration: underline;
+}
+
 .header-left{
     margin-bottom: 1em;
 }
@@ -91,6 +109,11 @@ html{
 
 .header-right-title{
     font-size: 2.1em;
+    text-transform: uppercase;
+}
+
+.header-right-title-books{
+    font-size: 1.6em;
     text-transform: uppercase;
 }
 
@@ -149,6 +172,13 @@ header{
         text-align: right;
         text-transform: uppercase;
     }
+
+    .container-skills{
+        display: grid;
+        grid-template-rows: auto;
+        align-items: start;
+    }
+
 
 }
 
