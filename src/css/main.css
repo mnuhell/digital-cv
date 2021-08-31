@@ -32,6 +32,66 @@ html{
     }
 }
 
+@keyframes wave {
+
+    0% {
+
+        transform: rotate(0deg);
+
+    }
+
+    10% {
+
+        transform: rotate(16deg);
+
+    }
+
+    20% {
+
+        transform: rotate(-6deg);
+
+    }
+
+    30% {
+
+        transform: rotate(16deg);
+
+    }
+
+    40% {
+
+        transform: rotate(-4deg);
+
+    }
+
+    50% {
+
+        transform: rotate(16deg);
+
+    }
+
+    60% {
+
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+
+        transform: rotate(0deg);
+
+    }
+
+}
+
+
+
+.greeting-hand{
+    animation: wave 2.1s 0.6s infinite;
+    transform-origin: 75% 75%;
+    display: inline-block;
+}
+
 .link{
 
     color: var(--text);
@@ -175,13 +235,17 @@ header{
 
     .container-skills{
         display: grid;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         align-items: start;
     }
-
 
 }
 
 @media screen and (min-width: 560px){
 
+    .container-skills{
+
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
