@@ -57,14 +57,14 @@ html{
 }
 .about-me-text{
     font-size: 1.3em;
+    line-height: 1.7em;
+    color: var(--text);
 }
 .label-text{
     background-color: var(--secondary-color);
     padding: 3px 6px;
-    color: var(--text);
     border-radius: 5px;
     display: inline-block;
-    line-height: 1.7em;
 }
 .container{
     max-width: 560px;
@@ -84,7 +84,7 @@ html{
 .header-right{
 
     margin-bottom: 1em;
-    padding: 5px 5px;
+    padding: 5px 0px;
     width: auto;
     color: var(--text)
 }
@@ -116,7 +116,7 @@ header{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-content: center;
-    align-items: flex-end;
+    align-items: center;
     grid-gap: 10px;
     grid-auto-rows: auto;
     border-bottom: 1px solid var(--secondary-color)
