@@ -4,7 +4,7 @@
 
 :root{
     --secondary-color: #F9C846;
-    --borders: #545863;
+    --borders: #324376;
     --text: #545863;
 }
 
@@ -86,7 +86,7 @@ html{
     margin-bottom: 1em;
     padding: 5px 5px;
     width: auto;
-    color: var(--borders)
+    color: var(--text)
 }
 
 .header-right-title{
