@@ -176,6 +176,10 @@ html{
     object-fit: cover;
 }
 
+.start{
+    color: var(--secondary-color)
+}
+
 .container{
     max-width: 560px;
     margin: 0 auto;
